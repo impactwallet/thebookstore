@@ -25,8 +25,8 @@ const products = [
       src: "https://i.ibb.co/r2gmzxj/image.png",
       alt: "The Book",
     },
-    orgId: "646669d9f6e214cd84c4453e",
-    wallet: "37ZnwAwMShAuFJB6Fahu1TmY6fpb9xAZ6bJKiA38Xnx5",
+    orgId: "647ec0373c0a48a84fe1986c",
+    wallet: "4a3poHvxyYQjEENBPRn58tZdce95Vnj8vciHork9DB7E",
   },
 ];
 function classNames(...classes: any[]) {
