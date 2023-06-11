@@ -17,16 +17,16 @@ import { Checkout } from "../../components/checkout";
 import { ProductContext } from "../_app";
 const products = [
   {
-    name: "The Book",
+    name: "Early Bird Ticket",
     price: 10,
     images:
     {
       id: 1,
-      src: "https://i.ibb.co/r2gmzxj/image.png",
-      alt: "The Book",
+      src: "https://i.ibb.co/f1dLJ9S/photo1684875169.jpg",
+      alt: "Early Bird Ticket",
     },
-    orgId: "647ec0373c0a48a84fe1986c",
-    wallet: "4a3poHvxyYQjEENBPRn58tZdce95Vnj8vciHork9DB7E",
+    orgId: "64832a2c3aac41df622d92de",
+    wallet: "CQo1KK1XdLSJNRNQSZ8m5fWFaSMD4Zp4DsqDbrSduzPf",
   },
 ];
 function classNames(...classes: any[]) {
