@@ -18,11 +18,19 @@ const theme = extendTheme({
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [prod, setProd] = useState<any[]>([]);
+  const [address, setAddress] = useState<string | null>(null);
   return (
     <>
       <ChakraProvider theme={theme}>
         <ProductContext.Provider value={{ prod, setProd }}>
-          <Component {...pageProps} />
+          {
+            !address && <div className="blocker">
+              <Paywall onConnect={(a: string) => setAddress(a)}></Paywall>
+            </div>
+          }
+          <div className={cn({ 'blured': !address })}>
+            <Component {...pageProps} />
+          </div>
         </ProductContext.Provider>
       </ChakraProvider>
     </>
