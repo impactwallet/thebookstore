@@ -22,7 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <ChakraProvider theme={theme}>
         <ProductContext.Provider value={{ prod, setProd }}>
-          <Navbar />
           <Component {...pageProps} />
         </ProductContext.Provider>
       </ChakraProvider>
