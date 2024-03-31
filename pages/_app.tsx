@@ -5,6 +5,7 @@ import Navbar from "../components/navbar";
 import Paywall from "../components/paywall";
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
+import cn from 'classnames';
 
 export const ProductContext = createContext<any>(null);
 
