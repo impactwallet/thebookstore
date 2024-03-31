@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { createContext, useState } from "react";
 import Navbar from "../components/navbar";
+import Paywall from "../components/paywall";
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 
