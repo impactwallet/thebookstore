@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl overflow-hidden py-8 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="flex flex-col text-center w-full mb-8">
-            <img className="mx-auto" src="photo1711830253.jpeg" alt="" srcset="" />
+            <img className="mx-auto" src="photo1711830253.jpeg" />
           </div>
         </div>
       </div>
