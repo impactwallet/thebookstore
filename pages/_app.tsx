@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <ProductContext.Provider value={{ prod, setProd }}>
           {
             !address && <div className="blocker">
-              <Paywall onConnect={(a: string) => setAddress(a)}></Paywall>
+              <Paywall onSignIn={(a: string) => setAddress(a)}></Paywall>
             </div>
           }
           <div className={cn({ 'blured': !address })}>
