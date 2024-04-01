@@ -12,7 +12,7 @@ function Paywall({ onConnect }: { onConnect: Function }) {
       <div style={{ background: '#fff', padding: '30px 0', borderRadius: '30px', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} className="w-full sm:w-96 h-full sm:h-auto">
         <h1 style={{ marginBottom: '60px' }} className="text-4xl font-semibold">Choose your plan</h1>
         <h2 style={{ marginBottom: '10px' }}>
-          <span className="text-6xl font-bold">$10</span> <span className="text-4xl font-semibold">/ mo</span>
+          <span className="text-6xl font-bold">$21</span> <span className="text-4xl font-semibold">/ mo</span>
         </h2>
         <button style={{ marginBottom: '10px', width: '260px', padding: '15px 0', backgroundColor: '#000', color: '#fff', borderRadius: '15px', fontWeight: '600', letterSpacing: '3px' }} className="text-lg">SUBSCRIBE</button>
         <p style={{ color: '#87899B' }}>Commit with credit card. Billed annually.</p>
