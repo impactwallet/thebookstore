@@ -22,7 +22,7 @@ function Paywall({ onSignIn }: { onSignIn: Function }) {
         <h2 style={{ marginBottom: '10px' }}>
           <span className="text-6xl font-bold">$0.10</span> <span className="text-4xl font-semibold">/ hr</span>
         </h2>
-        <button style={{ marginBottom: '10px', width: '260px', padding: '15px 0', backgroundColor: '#000', color: '#fff', borderRadius: '15px', fontWeight: '600', letterSpacing: '3px' }} className="text-lg" onClick={connect}>PAY-AS-YOU-GO</button>
+        <button style={{ marginBottom: '10px', width: '260px', padding: '15px 0', backgroundColor: '#000', color: '#fff', borderRadius: '15px', fontWeight: '600', letterSpacing: '3px' }} className="text-lg" onClick={handleSignInWithDeplan}>PAY-AS-YOU-GO</button>
         <p style={{ color: '#87899B' }}>No commitment. Powered by DePlan</p>
       </div>
     </>

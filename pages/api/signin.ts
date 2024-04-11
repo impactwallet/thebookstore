@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-// Sign In route
+// Sign In API endpoint
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse,
