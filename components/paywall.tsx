@@ -1,8 +1,15 @@
+import { DePlanClient } from "deplan-client";
+
 function Paywall({ onSignIn }: { onSignIn: Function }) {
 
   // Sign In with DePlan click handler
   async function handleSignInWithDeplan() {
-    
+    const deplanClient = new DePlanClient('9KSfkquHqtDGq4uzEjwg1AhYynzc9zFCAAQCVZb2hkTn');
+    const { message, signature, address } = deplanClient.signIn();
+
+    const { data } = await axios.post('/api/signin', { message, signature, address });
+
+    onSignIn(data.token);
   }
 
   return (
