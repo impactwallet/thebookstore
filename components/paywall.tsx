@@ -1,10 +1,8 @@
-import { DePlanClient } from "deplan-client";
-
 function Paywall({ onSignIn }: { onSignIn: Function }) {
-  async function connect() {
-    const client = new DePlanClient('CWWMnMXPM38o5PJra2dg7rgwkEwojujvVunGp8V85Huo');
-    const signInResult = await client.signIn();
-    onSignIn(signInResult);
+
+  // Sign In with DePlan click handler
+  async function handleSignInWithDeplan() {
+    
   }
 
   return (

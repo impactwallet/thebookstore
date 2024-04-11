@@ -20,17 +20,23 @@ const theme = extendTheme({
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [prod, setProd] = useState<any[]>([]);
-  const [address, setAddress] = useState<string | null>(null);
+  const [token, setToken] = useState<string | null>(null);
+
+  async function handleConnect({ message, signature }: { message: string, signature: string }) {
+    const { data } = await axios.post('/api/signin', { message, signature });
+    setToken(data.token);
+  };
+
   return (
     <>
       <ChakraProvider theme={theme}>
         <ProductContext.Provider value={{ prod, setProd }}>
           {
-            !address && <div className="blocker">
-              <Paywall onSignIn={(a: string) => setAddress(a)}></Paywall>
+            !token && <div className="blocker">
+              <Paywall onSignIn={(a: string) => setToken(a)}></Paywall>
             </div>
           }
-          <div className={cn({ 'blured': !address })}>
+          <div className={cn({ 'blured': !token })}>
             <Component {...pageProps} />
           </div>
         </ProductContext.Provider>
