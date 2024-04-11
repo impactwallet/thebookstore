@@ -6,7 +6,6 @@ import Paywall from "../components/paywall";
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import cn from 'classnames';
-import axios from 'axios';
 
 export const ProductContext = createContext<any>(null);
 

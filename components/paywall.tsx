@@ -1,4 +1,5 @@
 import { DePlanClient } from "deplan-client";
+import axios from 'axios';
 
 function Paywall({ onSignIn }: { onSignIn: Function }) {
 
