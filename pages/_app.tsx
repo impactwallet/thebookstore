@@ -23,11 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [prod, setProd] = useState<any[]>([]);
   const [token, setToken] = useState<string | null>(null);
 
-  async function handleConnect({ message, signature }: { message: string, signature: string }) {
-    const { data } = await axios.post('/api/signin', { message, signature });
-    setToken(data.token);
-  };
-
   return (
     <>
       <ChakraProvider theme={theme}>
